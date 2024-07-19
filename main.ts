@@ -2,7 +2,12 @@
 load dependency
 "robotbit": "file:../pxt-robotbit"
 */
-
+const enum DistanceUnit {
+    //% block="cm"
+    CM = 58, // Duration of echo round-trip in Microseconds (uS) for two centimeters, 343 m/s at sea level and 20°C
+    //% block="inch"
+    INCH = 148, // Duration of echo round-trip in Microseconds (uS) for two inches, 343 m/s at sea level and 20°C
+}
 
 //% color="#31C7D5" weight=10 icon="\uf1d0"
 namespace LAB_CODE{
@@ -529,7 +534,7 @@ export function MatrixClear(): void {
     matrixShow();
 }
     const MICROBIT_LABCODE_ULTRASONIC_OBJECT_DETECTED_ID = 798;
-    const MAX_ULTRASONIC_TRAVEL_TIME = 300*DistanceUnit.CM;
+    const MAX_ULTRASONIC_TRAVEL_TIME = 300 * DistanceUnit.CM;
     const ULTRASONIC_MEASUREMENTS = 3;
 
     interface UltrasonicRoundTrip {
@@ -745,5 +750,5 @@ export function MatrixClear(): void {
         }
     }
 }
-}
+
 
