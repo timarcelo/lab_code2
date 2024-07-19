@@ -4,17 +4,17 @@ load dependency
 */
 
 //% color="#31C7D5" weight=10 icon="\uf1d0"
-namespace < LAB_CODE > {
+namespace <LAB_CODE> {
 
-  ///  const PCA9685_ADDRESS = 0x40
+  // const PCA9685_ADDRESS = 0x40
   //  const MODE1 = 0x00
   //  const MODE2 = 0x01
    // const SUBADR1 = 0x02
-    //const SUBADR2 = 0x03
+    // const SUBADR2 = 0x03
    // const SUBADR3 = 0x04
   //  const PRESCALE = 0xFE
   //  const LED0_ON_L = 0x06
- ///   const LED0_ON_H = 0x07
+ //   const LED0_ON_H = 0x07
   //  const LED0_OFF_L = 0x08
    // const LED0_OFF_H = 0x09
   //  const ALL_LED_ON_L = 0xFA
@@ -43,7 +43,7 @@ namespace < LAB_CODE > {
     //const HT16K33_BLINK_1HZ = 2
     //\\const HT16K33_BLINK_HALFHZ = 3
   //const HT16K33_CMD_BRIGHTNESS = 0xE0
-   
+
     export enum Servos {
         S1 = 0x01,
         S2 = 0x02,
