@@ -479,7 +479,7 @@ export function MotorStopAll(): void {
 }
 
 //% blockId=robotbit_matrix_draw block="Matrix Draw|X %x|Y %y"
-//% group="Modules" weight=44
+//% group="Módulos" weight=44
 export function MatrixDraw(x: number, y: number): void {
     if (!initializedMatrix) {
         matrixInit();
@@ -521,7 +521,7 @@ export function MatrixClean(x: number, y: number): void {
 */
 
 //% blockId=robotbit_matrix_clear block="Matrix Clear"
-//% group="Modules" weight=42
+//% group="Módulos" weight=42
 //% blockGap=50
 export function MatrixClear(): void {
     if (!initializedMatrix) {
@@ -606,7 +606,7 @@ export function MatrixClear(): void {
      * @param unit unit of distance, eg: DistanceUnit.CM
      * @param handler body code to run when the event is raised
      */
-    //% subcategory="Ultrasonico"
+    //% group="Ultrasonico"
     //% blockId=labcode_ultrasonic_on_object_detected
     //% block="objeto detectado a | %distance | %unit"
     //% weight=69
