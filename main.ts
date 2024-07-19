@@ -2,12 +2,12 @@
 Riven
 modified from pxt-servo/servodriver.ts
 load dependency
-"robotbit": "file:../pxt-robotbit"
+"<LAB_CODE>": "file:../pxt-robotbit"
 */
 
 
 //% color="#31C7D5" weight=10 icon="\uf1d0"
-namespace robotbit {
+namespace <LAB_CODE> {
     const PCA9685_ADDRESS = 0x40
     const MODE1 = 0x00
     const MODE2 = 0x01
@@ -100,7 +100,7 @@ namespace robotbit {
 
     let initialized = false
     let initializedMatrix = false
-    let neoStrip: neopixel.Strip;
+//    let neoStrip: neopixel.Strip;
     let matBuf = pins.createBuffer(17);
     let distanceBuf = 0;
 
@@ -209,19 +209,6 @@ namespace robotbit {
         pins.i2cWriteBuffer(HT16K33_ADDRESS, matBuf);
     }
 
-
-    /**
-     * Init RGB pixels mounted on robotbit
-     */
-    //% blockId="robotbit_rgb" block="RGB"
-    //% weight=70
-    export function rgb(): neopixel.Strip {
-        if (!neoStrip) {
-            neoStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
-        }
-
-        return neoStrip;
-    }
 
     /**
      * Servo Execute
