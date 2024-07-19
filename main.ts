@@ -529,7 +529,7 @@ export function MatrixClear(): void {
     matrixShow();
 }
     const MICROBIT_LABCODE_ULTRASONIC_OBJECT_DETECTED_ID = 798;
-    const MAX_ULTRASONIC_TRAVEL_TIME = 300 * DistanceUnit.CM;
+    const MAX_ULTRASONIC_TRAVEL_TIME = 300*DistanceUnit.CM;
     const ULTRASONIC_MEASUREMENTS = 3;
 
     interface UltrasonicRoundTrip {
@@ -745,5 +745,5 @@ export function MatrixClear(): void {
         }
     }
 }
-
+}
 
