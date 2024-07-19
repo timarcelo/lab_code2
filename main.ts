@@ -1,11 +1,11 @@
 /*
 load dependency
 "robotbit": "file:../pxt-robotbit"
-*/
-
+*?
 
 //% color="#31C7D5" weight=10 icon="\uf1d0"
 namespace < LAB_CODE > {
+
   ///  const PCA9685_ADDRESS = 0x40
   //  const MODE1 = 0x00
   //  const MODE2 = 0x01
@@ -45,7 +45,7 @@ namespace < LAB_CODE > {
   //const HT16K33_CMD_BRIGHTNESS = 0xE0
    
     export enum Servos {
-    S1 = 0x01,
+        S1 = 0x01,
         S2 = 0x02,
         S3 = 0x03,
         S4 = 0x04,
